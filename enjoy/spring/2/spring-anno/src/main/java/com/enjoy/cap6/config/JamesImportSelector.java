@@ -6,7 +6,7 @@ import org.springframework.core.type.AnnotationMetadata;
 public class JamesImportSelector implements ImportSelector{
 	@Override
 	public String[] selectImports(AnnotationMetadata importingClassMetadata){
-		//返回全类名的bean
+		//杩斿洖鍏ㄧ被鍚嶇殑bean
 		return new String[]{"com.enjoy.cap6.bean.Fish","com.enjoy.cap6.bean.Tiger"};
 	}
 }

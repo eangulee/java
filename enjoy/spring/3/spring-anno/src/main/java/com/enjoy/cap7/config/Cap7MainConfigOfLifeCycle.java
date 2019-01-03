@@ -12,7 +12,7 @@ import com.enjoy.cap7.bean.Bike;
 public class Cap7MainConfigOfLifeCycle {
 	@Bean("person")
 	public Person person(){
-		System.out.println("¸øÈİÆ÷ÖĞÌí¼Óperson.......");
+		System.out.println("Â¸Ã¸ÃˆÃÃ†Ã·Ã–ÃÃŒÃ­Â¼Ã“person.......");
 		return new Person("person",20);
 	}
 	@Bean(initMethod="init", destroyMethod="destory")

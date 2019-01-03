@@ -11,16 +11,16 @@ public class LinCondition implements Condition{
 	
 	
 	/*
-	*ConditionContext: ÅĞ¶ÏÌõ¼ş¿ÉÒÔÊ¹ÓÃµÄÉÏÏÂÎÄ(»·¾³)
-	*AnnotatedTypeMetadata: ×¢½âµÄĞÅÏ¢
+	*ConditionContext: åˆ¤æ–­æ¡ä»¶å¯ä»¥ä½¿ç”¨çš„ä¸Šä¸‹æ–‡(ç¯å¢ƒ)
+	*AnnotatedTypeMetadata: æ³¨è§£çš„ä¿¡æ¯
 	*
 	*/
 	@Override
 	public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
-		// TODO ÊÇ·ñÎªWINDOWÏµÍ³
-		//ÄÜ»ñÈ¡µ½IOCÈİÆ÷ÕıÔÚÊ¹ÓÃµÄbeanFactory
+		// TODO æ˜¯å¦ä¸ºWINDOWç³»ç»Ÿ
+		//èƒ½è·å–åˆ°IOCå®¹å™¨æ­£åœ¨ä½¿ç”¨çš„beanFactory
 		ConfigurableListableBeanFactory beanFactory = context.getBeanFactory();
-		//»ñÈ¡µ±Ç°»·¾³±äÁ¿(°üÀ¨ÎÒÃÇ²Ù×÷ÏµÍ³ÊÇWIN»¹ÊÇLINUX??)
+		//è·å–å½“å‰ç¯å¢ƒå˜é‡(åŒ…æ‹¬æˆ‘ä»¬æ“ä½œç³»ç»Ÿæ˜¯WINè¿˜æ˜¯LINUX??)
 		Environment environment = context.getEnvironment();
 		String os_name = environment.getProperty("os.name");
 		if(os_name.contains("linux")){

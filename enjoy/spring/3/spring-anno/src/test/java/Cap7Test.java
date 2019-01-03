@@ -8,7 +8,7 @@ public class Cap7Test {
 	public void test01(){
 		AnnotationConfigApplicationContext app = new AnnotationConfigApplicationContext(Cap7MainConfigOfLifeCycle.class);
 		
-		System.out.println("IOC容器创建完成........");
+		System.out.println("IOC瀹瑰櫒鍒涘缓瀹屾垚........");
 		
 		app.close();
 		

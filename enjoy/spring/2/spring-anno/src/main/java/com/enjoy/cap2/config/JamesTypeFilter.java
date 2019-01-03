@@ -13,23 +13,23 @@ public class JamesTypeFilter implements TypeFilter{
 	private ClassMetadata classMetadata;
 
 	/*
-	 * MetadataReader:¶ÁÈ¡µ½µ±Ç°ÕıÔÚÉ¨ÃèÀàµÄĞÅÏ¢
-	 * MetadataReaderFactory:¿ÉÒÔ»ñÈ¡µ½ÆäËûÈÎºÎÀàĞÅÏ¢
+	 * MetadataReader:è¯»å–åˆ°å½“å‰æ­£åœ¨æ‰«æç±»çš„ä¿¡æ¯
+	 * MetadataReaderFactory:å¯ä»¥è·å–åˆ°å…¶ä»–ä»»ä½•ç±»ä¿¡æ¯
 	 */
 	
 	@Override
 	public boolean match(MetadataReader metadataReader, MetadataReaderFactory metadataReaderFactory)
 			throws IOException {
-		//»ñÈ¡µ±Ç°Àà×¢½âµÄĞÅÏ¢
+		//è·å–å½“å‰ç±»æ³¨è§£çš„ä¿¡æ¯
 		AnnotationMetadata annotationMetadata = metadataReader.getAnnotationMetadata();
-		//»ñÈ¡µ±Ç°ÕıÔÚÉ¨ÃèµÄÀàĞÅÏ¢
+		//è·å–å½“å‰æ­£åœ¨æ‰«æçš„ç±»ä¿¡æ¯
 		classMetadata = metadataReader.getClassMetadata();
-		//»ñÈ¡µ±Ç°Àà×ÊÔ´(ÀàµÄÂ·¾¶)
+		//è·å–å½“å‰ç±»èµ„æº(ç±»çš„è·¯å¾„)
 		Resource resource = metadataReader.getResource();
 		
 		String className = classMetadata.getClassName();
 		System.out.println("----->"+className);
-		if(className.contains("order")){//µ±Àà°üº¬er×Ö·û, ÔòÆ¥Åä³É¹¦,·µ»Øtrue
+		if(className.contains("order")){//å½“ç±»åŒ…å«erå­—ç¬¦, åˆ™åŒ¹é…æˆåŠŸ,è¿”å›true
 			return true;
 		}
 		return false;

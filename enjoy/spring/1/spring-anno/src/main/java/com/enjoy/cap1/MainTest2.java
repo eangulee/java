@@ -1,4 +1,4 @@
-package com.enjoy.cap1;
+ï»¿package com.enjoy.cap1;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -8,12 +8,12 @@ import com.enjoy.cap1.config.MainConfig;
 
 public class MainTest2 { 
 	public static void main(String args[]){
-		//°Ñbeans.xmlµÄÀà¼ÓÔØµ½ÈİÆ÷
+		//æŠŠbeans.xmlçš„ç±»åŠ è½½åˆ°å®¹å™¨
 		//ApplicationContext app = new ClassPathXmlApplicationContext("beans.xml");
 		
 		ApplicationContext app = new AnnotationConfigApplicationContext(MainConfig.class);
 		
-		//´ÓÈİÆ÷ÖĞ»ñÈ¡bean
+		//ä»å®¹å™¨ä¸­è·å–bean
 		//Person person = (Person) app.getBean("person01");
 		
 		//System.out.println(person);

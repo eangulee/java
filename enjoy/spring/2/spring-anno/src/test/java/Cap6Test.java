@@ -9,12 +9,12 @@ public class Cap6Test {
 	public void test01(){
 		AnnotationConfigApplicationContext app = new AnnotationConfigApplicationContext(Cap6MainConfig.class);
 		
-		System.out.println("IOCÈİÆ÷´´½¨Íê³É........");
+		System.out.println("IOCå®¹å™¨åˆ›å»ºå®Œæˆ........");
 		
 		
 		Object bean1 = app.getBean("jamesFactoryBean");
-		Object bean2 = app.getBean("jamesFactoryBean");//È¡Money
-		System.out.println("beanµÄÀàĞÍ="+bean1.getClass());
+		Object bean2 = app.getBean("jamesFactoryBean");//å–Money
+		System.out.println("beançš„ç±»å‹="+bean1.getClass());
 		System.out.println(bean1 == bean2);
 		
 		String[] beanDefinitionNames = app.getBeanDefinitionNames();

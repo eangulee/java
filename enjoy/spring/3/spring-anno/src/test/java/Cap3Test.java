@@ -15,11 +15,11 @@ public class Cap3Test {
 		for(String name:names){
 			System.out.println(name);
 		}
-		//´ÓÈİÆ÷ÖĞ·Ö±ğÈ¡Á½´ÎpersonÊµÀı, ¿´ÊÇ·ñÎªÍ¬Ò»¸öbean
+		//ä»å®¹å™¨ä¸­åˆ†åˆ«å–ä¸¤æ¬¡personå®ä¾‹, çœ‹æ˜¯å¦ä¸ºåŒä¸€ä¸ªbean
 		Object bean1 = app.getBean("person");
 		Object bean2 = app.getBean("person");
 		System.out.println(bean1 == bean2);
-		//½áÂÛ:bean1¾ÍÊÇbean2,Í¬Ò»¸ö¶ÔÏó
+		//ç»“è®º:bean1å°±æ˜¯bean2,åŒä¸€ä¸ªå¯¹è±¡
 		
 	}
 }

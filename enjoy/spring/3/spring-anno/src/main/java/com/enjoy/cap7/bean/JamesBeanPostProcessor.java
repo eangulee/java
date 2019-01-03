@@ -7,9 +7,9 @@ import org.springframework.stereotype.Component;
 public class JamesBeanPostProcessor implements BeanPostProcessor{
 	@Override
 	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-		//返回一个的对象(传过来的对象)
-		//在初始化方法调用之前进行后置处理工作,
-		//什么时候调用它: init-method=init之前调用
+		//杩斿洖涓�涓殑瀵硅薄(浼犺繃鏉ョ殑瀵硅薄)
+		//鍦ㄥ垵濮嬪寲鏂规硶璋冪敤涔嬪墠杩涜鍚庣疆澶勭悊宸ヤ綔,
+		//浠�涔堟椂鍊欒皟鐢ㄥ畠: init-method=init涔嬪墠璋冪敤
 		System.out.println("postProcessBeforeInitialization...."+beanName+"..."+bean);
 		return bean;
 	}

@@ -10,13 +10,13 @@ public class Train implements InitializingBean, DisposableBean{
 	public Train(){
 		System.out.println("Train......constructor............");
 	}
-	//µ±ÎÒÃÇbeanÏú»ÙÊ±,µ÷ÓÃ´Ë·½·¨
+	//å½“æˆ‘ä»¬beané”€æ¯æ—¶,è°ƒç”¨æ­¤æ–¹æ³•
 	@Override
 	public void destroy() throws Exception {
 		System.out.println("Train......destory......");
 		//logger.error
 	}
-	//µ±ÎÒÃÇµÄbeanÊôĞÔ¸³ÖµºÍ³õÊ¼»¯Íê³ÉÊ±µ÷ÓÃ
+	//å½“æˆ‘ä»¬çš„beanå±æ€§èµ‹å€¼å’Œåˆå§‹åŒ–å®Œæˆæ—¶è°ƒç”¨
 	@Override
 	public void afterPropertiesSet() throws Exception {
 		System.out.println("Train.......afterPropertiesSet()...");

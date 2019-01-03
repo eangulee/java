@@ -18,7 +18,7 @@ import com.enjoy.cap2.controller.OrderController;
 
 
 public class Cap2MainConfig {
-	//给容器中注册一个bean, 类型为返回值的类型, 
+	//缁欏鍣ㄤ腑娉ㄥ唽涓�涓猙ean, 绫诲瀷涓鸿繑鍥炲�肩殑绫诲瀷, 
 	@Bean
 	public Person person01(){
 		return new Person("james",20);
