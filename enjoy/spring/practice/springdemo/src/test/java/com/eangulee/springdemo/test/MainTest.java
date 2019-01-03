@@ -14,8 +14,11 @@ public class MainTest {
 	@Test
 	public void test() {
 		AnnotationConfigApplicationContext app = new AnnotationConfigApplicationContext(MainConfig.class);
+
+		Person eangulee = (Person)app.getBean("eangulee");		
+		System.out.println(eangulee.toString());
 		
-		Person person = app.getBean(Person.class);
+		Person person =  (Person)app.getBean("getperson");
 		System.out.println(person.toString());
 				
 		System.out.println("getApplicationName:"+app.getApplicationName());
