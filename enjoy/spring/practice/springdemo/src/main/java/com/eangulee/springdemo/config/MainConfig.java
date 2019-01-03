@@ -12,7 +12,7 @@ import com.eangulee.springdemo.model.*;
 import com.eangulee.springdemo.model.Person;
 
 @Import({Fish.class,Pig.class,EanguleeImportSelector.class,EanguleeImportBeanDefinitionRegistrar.class})
-@ComponentScan(value = "com.eangulee.jedisdemo")
+@ComponentScan(value = "com.eangulee.springdemo")
 @Configuration // 标记为一个配置类===配置文件
 public class MainConfig {
 	@Lazy // 懒加载，也不是延迟加载，而是用到该方法时（取当前bean）才实例化
@@ -40,5 +40,20 @@ public class MainConfig {
 	@Bean 
 	public EanguleeFactoryBean eangulee() {		
 		return new EanguleeFactoryBean();
+	}
+	
+	@Bean(initMethod="init",destroyMethod="destroy")
+	public Bike bike() {		
+		return new Bike();
+	}
+	
+	@Bean
+	public Jeep jeep() {
+		return new Jeep();
+	}
+	
+	@Bean
+	public Train train() {
+		return new Train();
 	}
 }
