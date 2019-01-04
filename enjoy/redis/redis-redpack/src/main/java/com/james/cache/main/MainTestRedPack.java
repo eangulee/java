@@ -16,6 +16,13 @@ import com.james.cache.redpack.GetRedPack;
 
 import redis.clients.jedis.Jedis;
 
+
+/**
+ * @author 作者：作者： jing lee
+ * @version 创建时间：2019年1月4日 上午11:02:11 
+ * @description 说明：
+ *
+ */
 public class MainTestRedPack {
 
 	public static void main(String[] args) throws InterruptedException {
@@ -25,6 +32,14 @@ public class MainTestRedPack {
 		TestPython();
 	}
 
+	
+	
+	/**
+	 * @author 作者：作者： jing lee
+	 * @version 创建时间：2019年1月4日 上午11:03:38 
+	 * @description 说明：
+	 *
+	 */
 	private static void TestPython() {
 		int a = 18;
 		int b = 23;
