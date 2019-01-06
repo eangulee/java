@@ -8,6 +8,7 @@ import java.util.Set;
 
 import javax.annotation.Resource;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.james.cache.basic.Constants;
@@ -21,7 +22,7 @@ import com.james.cache.utils.JedisUtils;
 public class RedisArticleServiceImpl implements RedisArticleService{
 
 
-	@Resource
+	@Autowired
 	private JedisUtils jedis;
 	/**
 	* 文章提交发布

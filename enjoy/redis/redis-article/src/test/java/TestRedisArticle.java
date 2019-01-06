@@ -7,6 +7,8 @@ import javax.annotation.Resource;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -20,8 +22,8 @@ import org.junit.runners.MethodSorters;
 @ContextConfiguration("classpath:applicationContext.xml")
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class TestRedisArticle {
-
-	@Resource(name = "redisArticleServiceImpl")
+	@Qualifier("redisArticleServiceImpl")
+	@Autowired
 	private RedisArticleService redisArticleService;
 
 	/**
@@ -48,7 +50,7 @@ public class TestRedisArticle {
 	*/
 	@Test
 	public void barticleVote(){
-		String userId = "002";
+		String userId = "003";
 		String articleId = "1";
 
         System.out.println("开始对文章"+"article:" + articleId+"进行投票啦~~~~~");

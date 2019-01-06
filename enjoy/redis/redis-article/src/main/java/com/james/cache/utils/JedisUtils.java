@@ -22,7 +22,7 @@ import redis.clients.jedis.BinaryClient.LIST_POSITION;
 public class JedisUtils {
 
 	private JedisPool pool = null;
-	private String ip = "192.168.42.111";
+	private String ip = "192.168.42.100";
 	private int port = 6379;
 	private String auth = "12345678";
 

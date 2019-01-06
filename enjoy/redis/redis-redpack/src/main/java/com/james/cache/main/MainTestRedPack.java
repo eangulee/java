@@ -13,8 +13,10 @@ import org.springframework.util.StopWatch;
 import com.alibaba.fastjson.JSONObject;
 import com.james.cache.redpack.GenRedPack;
 import com.james.cache.redpack.GetRedPack;
+import com.james.cache.utils.JedisUtils;
 
 import redis.clients.jedis.Jedis;
+import redis.clients.util.JedisURIHelper;
 
 
 /**
@@ -26,10 +28,13 @@ import redis.clients.jedis.Jedis;
 public class MainTestRedPack {
 
 	public static void main(String[] args) throws InterruptedException {
-//		GenRedPack.genHongBao();//初始化红包
-//		
-//		GetRedPack.getHongBao();//从红包池抢红包
-		TestPython();
+		
+		GenRedPack.genHongBao();//初始化红包
+		
+		GetRedPack.getHongBao();//从红包池抢红包
+		
+		
+		//		TestPython();
 	}
 
 	

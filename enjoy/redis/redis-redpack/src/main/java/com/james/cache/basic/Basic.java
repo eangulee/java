@@ -7,7 +7,7 @@ package com.james.cache.basic;
  * @author 【享学课堂】 往期视频依娜老师 ：2470523467
  */
 public class Basic {
-	public static String ip = "192.168.10.106";
+	public static String ip = "192.168.42.100";
 	public static int port = 6379;
 	public static String auth = "12345678";
 	public static int honBaoCount = 1000;
