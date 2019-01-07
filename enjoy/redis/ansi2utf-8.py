@@ -36,5 +36,5 @@ def process_bak_files(action='restore'):
     except Exception, e:
      print source
 if __name__ == '__main__':
- #main()
+ main()
  process_bak_files(action='clear')
