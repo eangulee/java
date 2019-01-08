@@ -13,9 +13,9 @@ public class JedisSentinel {
 	@Test
 	public void testJedis() throws InterruptedException {
 		Set<String> sentinels = new HashSet<String>();
-		String hostAndPort1 = "192.168.42.111:26379";
-		String hostAndPort2 = "192.168.42.111:26380";
-		String hostAndPort3 = "192.168.42.111:26381";
+		String hostAndPort1 = "192.168.42.100:26379";
+		String hostAndPort2 = "192.168.42.100:26380";
+		String hostAndPort3 = "192.168.42.100:26381";
 		sentinels.add(hostAndPort1);
 		sentinels.add(hostAndPort2);
 		sentinels.add(hostAndPort3);
@@ -29,7 +29,7 @@ public class JedisSentinel {
 		try {
 			jedis = redisSentinelJedisPool.getResource();
 
-			//jedis.set("name", "james11");
+			jedis.set("name", "james11");
 			System.out.println(jedis.get("name"));
 		} catch (Exception e) {
 			e.printStackTrace();

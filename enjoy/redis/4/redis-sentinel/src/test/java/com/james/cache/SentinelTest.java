@@ -37,6 +37,6 @@ public class SentinelTest {
 	@Test
 	public void testGet() throws InterruptedException{
 		 
-		System.out.println("============="+service.get("age1"));
+		System.out.println("============="+service.get("age"));
 	}
 }
