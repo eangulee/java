@@ -1,3 +1,5 @@
+package ExamplePrograms.Chap07.shellSort;
+
 // shellSort.java
 // demonstrates shell sort
 // to run this program: C>java ShellSortApp

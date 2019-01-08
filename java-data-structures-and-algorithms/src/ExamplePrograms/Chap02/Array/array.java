@@ -1,3 +1,5 @@
+package ExamplePrograms.Chap02.Array;
+
 // array.java
 // demonstrates Java arrays
 // to run this program: C>java arrayApp

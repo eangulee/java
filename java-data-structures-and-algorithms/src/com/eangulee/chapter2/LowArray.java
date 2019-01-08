@@ -1,4 +1,4 @@
-package com.eangulee.chapter1;
+package com.eangulee.chapter2;
 
 public class LowArray {
 	private long[] a;

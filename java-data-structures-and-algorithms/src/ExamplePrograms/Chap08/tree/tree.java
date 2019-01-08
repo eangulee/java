@@ -1,3 +1,5 @@
+package ExamplePrograms.Chap08.tree;
+
 // tree.java
 // demonstrates binary tree
 // to run this program: C>java TreeApp

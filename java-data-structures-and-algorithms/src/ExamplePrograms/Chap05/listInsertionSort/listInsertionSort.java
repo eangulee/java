@@ -1,3 +1,5 @@
+package ExamplePrograms.Chap05.listInsertionSort;
+
 // listInsertionSort.java
 // demonstrates sorted list used for sorting
 // to run this program: C>java ListInsertionSortApp

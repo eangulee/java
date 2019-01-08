@@ -1,3 +1,5 @@
+package ExamplePrograms.Chap02.ClassData;
+
 // classDataArray.java
 // data items as class objects
 // to run this program: C>java ClassDataApp

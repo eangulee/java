@@ -1,4 +1,4 @@
-package com.eangulee.chapter1;
+package com.eangulee.chapter2;
 
 import sun.print.resources.serviceui;
 
@@ -7,7 +7,8 @@ public class MainTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //		LowArrayApp();
-		HighArrayApp();
+//		HighArrayApp();
+		orderArrayApp();
 	}
 
 	static void LowArrayApp() {
@@ -82,5 +83,36 @@ public class MainTest {
 		
 		highArray.display();
 			
+	}
+	
+	static void orderArrayApp() {
+		int maxSize = 100; // array size
+		OrderArray arr; // reference to array
+		arr = new OrderArray(maxSize); // create the array
+
+		arr.insert(77); // insert 10 items
+		arr.insert(99);
+		arr.insert(44);
+		arr.insert(55);
+		arr.insert(22);
+		arr.insert(88);
+		arr.insert(11);
+		arr.insert(00);
+		arr.insert(66);
+		arr.insert(33);
+
+		int searchKey = 55; // search for item
+		if (arr.find(searchKey) != -1)
+			System.out.println("Found " + searchKey);
+		else
+			System.out.println("Can't find " + searchKey);
+
+		arr.display(); // display items
+
+		arr.delete(00); // delete 3 items
+		arr.delete(55);
+		arr.delete(99);
+
+		arr.display(); // display items again
 	}
 }

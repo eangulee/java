@@ -1,3 +1,5 @@
+package ExamplePrograms.Chap12.heap;
+
 // heap.java
 // demonstrates heaps
 // to run this program: C>java HeapApp

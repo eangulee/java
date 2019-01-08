@@ -1,3 +1,5 @@
+package ExamplePrograms.Chap01.Bank;
+
 // bank.java
 // demonstrates basic OOP syntax
 // to run this program: C>java BankApp

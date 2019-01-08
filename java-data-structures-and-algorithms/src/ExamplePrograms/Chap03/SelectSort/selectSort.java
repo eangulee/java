@@ -1,3 +1,5 @@
+package ExamplePrograms.Chap03.SelectSort;
+
 // selectSort.java
 // demonstrates selection sort
 // to run this program: C>java SelectSortApp

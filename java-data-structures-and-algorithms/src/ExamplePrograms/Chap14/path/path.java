@@ -1,3 +1,5 @@
+package ExamplePrograms.Chap14.path;
+
 // path.java
 // demonstrates shortest path with weighted, directed graphs
 // to run this program: C>java PathApp

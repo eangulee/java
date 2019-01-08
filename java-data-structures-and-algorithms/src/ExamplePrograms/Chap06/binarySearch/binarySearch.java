@@ -1,3 +1,5 @@
+package ExamplePrograms.Chap06.binarySearch;
+
 // binarySearch.java
 // demonstrates recursive binary search
 // to run this program: C>java BinarySearchApp

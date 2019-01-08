@@ -1,3 +1,5 @@
+package ExamplePrograms.Chap04.Queue;
+
 // Queue.java
 // demonstrates queue
 // to run this program: C>java QueueApp

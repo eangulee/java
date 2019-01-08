@@ -1,3 +1,5 @@
+package ExamplePrograms.Chap04.Brackets;
+
 // brackets.java
 // stacks used to check matching brackets
 // to run this program: C>java bracketsApp

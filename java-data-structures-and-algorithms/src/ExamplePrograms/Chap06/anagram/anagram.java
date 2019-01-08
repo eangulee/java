@@ -1,3 +1,5 @@
+package ExamplePrograms.Chap06.anagram;
+
 // anagram.java
 // creates anagrams
 // to run this program: C>java AnagramApp

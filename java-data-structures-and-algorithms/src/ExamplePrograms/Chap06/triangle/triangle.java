@@ -1,3 +1,5 @@
+package ExamplePrograms.Chap06.triangle;
+
 // triangle.java
 // evaluates triangular numbers
 // to run this program: C>java TriangleApp
