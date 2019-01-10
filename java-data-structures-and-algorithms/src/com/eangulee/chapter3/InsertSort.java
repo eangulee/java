@@ -4,12 +4,12 @@ package com.eangulee.chapter3;
 // demonstrates selection sort
 // to run this program: C>java SelectSortApp
 ////////////////////////////////////////////////////////////////
-public class SelectSort
+public class InsertSort
    {
    private long[] a;                 // ref to array a
    private int nElems;               // number of data items
 //--------------------------------------------------------------
-   public SelectSort(int max)          // constructor
+   public InsertSort(int max)          // constructor
       {
       a = new long[max];                 // create the array
       nElems = 0;                        // no items yet
@@ -28,25 +28,19 @@ public class SelectSort
       System.out.println("");
       }
 //--------------------------------------------------------------
-   public void selectionSort()//O(N^2)
+   public void insertionSort()//O(N^2)
       {
-      int out, in, min;
-      //每次选中最小的元素，将它放到左边，有点类似冒泡，但是逻辑不同，时间复杂度差不多
-      for(out=0; out<nElems-1; out++)   // outer loop
+      int out, in;
+
+      for(out=1; out<nElems; out++)   // outer loop
          {
-         min = out;                     // minimum
-         for(in=out+1; in<nElems; in++) // inner loop
-            if(a[in] < a[min] )         // if min greater,
-                min = in;               // we have a new min
-         swap(out, min);                // swap them
+    	  long temp = a[out];//mark element
+    	  in = out;
+    	  while(in > 0&& a[in-1] > temp) {//左边维护一个局部有序的队列，然后标记一个没有排序的元素，在局部有序队列中比标记的大往右移，最左端不能超过0索引位
+    		  a[in] = a[in-1];
+    		  in --;    		  
+    	  }
+    	  a[in] = temp;    	  
          }  // end for(out)
-      }  // end selectionSort()
-//--------------------------------------------------------------
-   private void swap(int one, int two)
-      {
-      long temp = a[one];
-      a[one] = a[two];
-      a[two] = temp;
-      }
-//--------------------------------------------------------------
+      }  // end insertionSort()
    }  // end class ArraySel

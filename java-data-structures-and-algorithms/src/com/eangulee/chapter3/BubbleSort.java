@@ -34,7 +34,7 @@ class ArrayBub {
 	// O(1) > O(logN) > O(N) > O(N*logN) > O(N^2) > O(N!)
 	public void bubbleSort() {
 		int out, in;
-
+		//大的往右移，所以称为冒泡排序
 		for (out = nElems - 1; out > 1; out--) // outer loop (backward)
 			for (in = 0; in < out; in++) // inner loop (forward)
 				if (a[in] > a[in + 1]) // out of order?
