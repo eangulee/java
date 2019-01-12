@@ -24,7 +24,7 @@ public class ProvincesController {
 	@Autowired
 	private ProvincesService provincesService;
 
-	@ApiOperation(value="省份列表")
+	@ApiOperation(value="省份列表",notes="查询成功！")
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public List<Provinces> query(HttpServletRequest request){
         try {
