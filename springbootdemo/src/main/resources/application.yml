@@ -1,0 +1,6 @@
+server:
+  port: 8090
+  compression:
+    enabled: true
+  connection-timeout: 3000
+    
