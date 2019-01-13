@@ -1,0 +1,23 @@
+
+public class Main {
+	public static void main(String[] args) {
+		// 0原生计算
+		System.out.println("原生:" + (0.1 + 0.2));
+		// 1.链式操作
+		double v1 = CalcUtils.init(0).add(0.1).add(0.2).doubleValue();
+		System.out.println("链式:" + v1);
+		// 2.直接操作
+		double v2 = CalcUtils.add(0.1, 0.2).doubleValue();
+		System.out.println("直接:" + v2);
+		// 3.混合运算,支持任何类型
+		float v3 = CalcUtils.add(0.3, 0.5f).mul(0.5d).div(2L).sub(2).add((short) 2).floatValue();
+		System.out.println("混合运算:" + v3);
+		// 4.小数位默认2位
+		double v4 = CalcUtils.div(2, 3).doubleValue();
+		System.out.println("小数默认2位:" + v4);
+		// 5.小数位可调整调整
+		double v5 = CalcUtils.div(2, 3).doubleValue(6);
+		System.out.println("调整小数位:" + v5);
+
+	}
+}
