@@ -5,6 +5,6 @@
 </head>
 <body>
 <h1>Welcome to...</h1>
-<img th:src="@{/images/TacoCloud.png}"/>
+<img src="/images/TacoCloud.png"/>
 </body>
 </html>

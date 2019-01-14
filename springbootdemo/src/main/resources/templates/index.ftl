@@ -5,6 +5,7 @@
 </head>
 <body>
 <h1>Welcome to...</h1>
-<img th:src="@{/images/TacoCloud.png}"/>
+<img src="/images/TacoCloud.png"/>
+<!--<h3>${userName}</h3>-->
 </body>
 </html>
