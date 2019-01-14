@@ -6,7 +6,11 @@ import java.io.InputStreamReader;
 
 public class MainTest {
 	public static void main(String[] args) throws IOException {
-		TriangleApp();
+//		TriangleApp();
+//		AnagramApp.mainTest();
+//		BinarySearchApp.mainTest();
+//		MergeApp.mainTest();
+		MergeSortApp.mainTest();
 	} // end main()
 
 	private static void TriangleApp() throws IOException {
