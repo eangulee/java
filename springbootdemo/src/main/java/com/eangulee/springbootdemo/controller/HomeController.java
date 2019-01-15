@@ -12,15 +12,15 @@ import lombok.extern.slf4j.Slf4j;
 @Controller
 public class HomeController {
 
-//	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "/", method = RequestMethod.GET)
 	@GetMapping(value = "/")
 	public String home() {
 		log.info("home test!");
 		return "home";
 	}
 	
-	@GetMapping(value = "/index")
-	public String index() {
-		return "index";
-	}
+//	@GetMapping(value = "/index")
+//	public String index() {
+//		return "index";
+//	}
 }

@@ -1,6 +1,6 @@
 //tag::all[]
 //tag::allButValidation[]
-package com.eangulee.springbootdemo.dao;
+package com.eangulee.springbootdemo.model;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;

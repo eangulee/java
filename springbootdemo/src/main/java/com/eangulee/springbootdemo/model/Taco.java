@@ -1,6 +1,6 @@
 // tag::all[]
 // tag::allButValidation[]
-package com.eangulee.springbootdemo.dao;
+package com.eangulee.springbootdemo.model;
 import java.util.List;
 // end::allButValidation[]
 import javax.validation.constraints.NotNull;

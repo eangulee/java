@@ -1,4 +1,4 @@
-package com.eangulee.springbootdemo.dao;
+package com.eangulee.springbootdemo.model;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;

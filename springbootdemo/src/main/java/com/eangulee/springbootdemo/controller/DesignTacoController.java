@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.eangulee.springbootdemo.dao.Ingredient;
-import com.eangulee.springbootdemo.dao.Ingredient.Type;
-import com.eangulee.springbootdemo.dao.Taco;
+import com.eangulee.springbootdemo.model.Ingredient;
+import com.eangulee.springbootdemo.model.Taco;
+import com.eangulee.springbootdemo.model.Ingredient.Type;
 
 import lombok.extern.slf4j.Slf4j;
 

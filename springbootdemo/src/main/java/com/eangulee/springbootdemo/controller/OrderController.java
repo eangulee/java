@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 //tag::baseClass[]
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.eangulee.springbootdemo.dao.Order;
+import com.eangulee.springbootdemo.model.Order;
 
 import lombok.extern.slf4j.Slf4j;
 

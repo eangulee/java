@@ -1,9 +1,10 @@
 <!-- tag::allButValidation[] -->
+<#import "spring.ftl" as spring/>  
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
   <head>
-    <title>Taco Cloud</title>
+    <title>Order Form</title>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
@@ -14,6 +15,11 @@
 		
       <img src="/images/TacoCloud.png"/>
       <a href="/design" id="another">Design another taco</a><br/>
+      <div>  
+  	  	<span><a href="/orders/current?l=zh_CN">中文</a></span>  
+      	<span><a href="/orders/current?l=en_US">英文</a></span>
+      </div>  
+		
 		
       <div "#if fields.hasErrors()">
         <span class="validationError">
@@ -22,8 +28,8 @@
       </div>
 
       <h3>Deliver my taco masterpieces to...</h3>
-      <label>Name: </label>
-      <input name="order.name" type="text" field="${order}"/>
+      <label><@spring.message "message.user.name"/>: </label>
+      <input name="order.name" type="text" placeholder="<@spring.message "message.user.name"/>" field="${order}"/>
 <!-- end::allButValidation[] -->
 	  
 
