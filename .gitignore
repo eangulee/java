@@ -28,6 +28,7 @@ jpress/
 .project
 /target/
 /.settings/
+/bin
 
 
 # Built application files
