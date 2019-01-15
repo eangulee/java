@@ -15,7 +15,7 @@ public class HomeController {
 //	@RequestMapping(value = "/", method = RequestMethod.GET)
 	@GetMapping(value = "/")
 	public String home() {
-		log.debug("home test!");
+		log.info("home test!");
 		return "home";
 	}
 	
