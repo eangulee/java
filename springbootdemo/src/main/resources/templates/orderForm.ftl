@@ -16,7 +16,7 @@
       <img src="/images/TacoCloud.png"/>
       <a href="/design" id="another">Design another taco</a><br/>
       <div>  
-  	  	<span><a href="/orders/current?l=zh_CN">中文</a></span>  
+  	  	<span><a href="/orders/current?l=zh_CN">中文</a></span>
       	<span><a href="/orders/current?l=en_US">英文</a></span>
       </div>  
 		
