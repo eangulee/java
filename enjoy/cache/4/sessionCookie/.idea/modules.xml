@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cas_login/cas_login.iml" filepath="$PROJECT_DIR$/cas_login/cas_login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cas_support/cas_support.iml" filepath="$PROJECT_DIR$/cas_support/cas_support.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cas_viewA/cas_viewA.iml" filepath="$PROJECT_DIR$/cas_viewA/cas_viewA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sessionA/sessionA.iml" filepath="$PROJECT_DIR$/sessionA/sessionA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sessionB/sessionB.iml" filepath="$PROJECT_DIR$/sessionB/sessionB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/session_support/session_support.iml" filepath="$PROJECT_DIR$/session_support/session_support.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sessioncookie.iml" filepath="$PROJECT_DIR$/sessioncookie.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="cas_login" />
+        <module name="cas_support" />
+        <module name="cas_viewA" />
+        <module name="session_support" />
+        <module name="sessionA" />
+        <module name="sessionB" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="cas_login" target="1.8" />
+      <module name="cas_support" target="1.7" />
+      <module name="cas_viewA" target="1.8" />
+      <module name="session_support" target="1.8" />
+      <module name="sessionA" target="1.8" />
+      <module name="sessionB" target="1.8" />
+      <module name="sessioncookie" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

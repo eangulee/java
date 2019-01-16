@@ -26,9 +26,9 @@ jpress/
 # eclipse files
 .classpath
 .project
-/target/
-/.settings/
-/bin
+target/
+.settings/
+bin/
 
 
 # Built application files
