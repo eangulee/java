@@ -1,0 +1,1 @@
+C:\Windows\System32\drivers\etc下找到hosts文件,修改里面的内容,在最下边 添加 127.0.0.1 xxxx.com,在IP地址前按下tab键,IP地址后加tab键.
