@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p" xmlns:lang="http://www.springframework.org/schema/lang" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context" xmlns:cache="http://www.springframework.org/schema/cache" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	         http://www.springframework.org/schema/beans/spring-beans.xsd
+	         http://www.springframework.org/schema/aop     
+	         http://www.springframework.org/schema/aop/spring-aop.xsd
+	         http://www.springframework.org/schema/context     
+	         http://www.springframework.org/schema/context/spring-context.xsd
+	         http://www.springframework.org/schema/cache
+	         http://www.springframework.org/schema/cache/spring-cache.xsd">
+
+	<context:property-placeholder location="classpath:config.properties" />
+
+	<!-- 加载simple-spring-memcached的配置-->
+	<import resource="classpath:simplesm-context.xml" />
+	
+	<aop:aspectj-autoproxy />
+	
+	<context:annotation-config />
+	
+	<cache:annotation-driven cache-manager="cacheManager" />
+
+	<!-- spring自己的换管理器，这里定义了两个缓存位置名称 ，既注解中的value -->
+	<bean id="cacheManager" class="org.springframework.cache.support.SimpleCacheManager">
+		<property name="caches">
+			<set>
+				<!-- spring的内存式缓存 -->
+				<bean class="org.springframework.cache.concurrent.ConcurrentMapCacheFactoryBean" p:name="default" />
+				<!-- spring cache 与 memcached集成 -->
+				<bean class="cn.enjoy.memcached.MemCacheUtils">
+					<property name="cache" ref="memCache" />
+				</bean>
+			</set>
+		</property>
+	</bean>
+
+	<!-- memcache的缓存支持 -->
+	<bean name="memCache" class="com.google.code.ssm.CacheFactory">
+		<property name="cacheClientFactory">
+			<bean name="cacheClientFactory" class="com.google.code.ssm.providers.xmemcached.MemcacheClientFactoryImpl" />
+		</property>
+		<property name="addressProvider">
+			<bean class="com.google.code.ssm.config.DefaultAddressProvider">
+				<!-- ${memcache.url} 可以配置多个memcached -->
+				<property name="address" value="${memcache.url}" />
+			</bean>
+		</property>
+		<property name="configuration">
+			<bean class="com.google.code.ssm.providers.CacheConfiguration">
+				<!-- 是否使用一致性hash算法 -->
+				<property name="consistentHashing" value="true" />
+			</bean>
+		</property>
+		<property name="cacheName" value="memcached"/>  
+	</bean>
+	
+	<bean id="userService" class="cn.enjoy.memcached.UserService"></bean>
+</beans>
