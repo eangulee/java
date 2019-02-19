@@ -42,6 +42,7 @@ public class MessageResourceInterceptor implements HandlerInterceptor {
         // 在Controller上注解了i18
         I18n i18nController = method.getBeanType().getAnnotation(I18n.class);
         if (null != i18nController) {
+        	System.out.println("value:"+i18nController.value());
             req.setAttribute(MessageResourceExtension.I18N_ATTRIBUTE, i18nController.value());
             return;
         }

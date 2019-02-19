@@ -63,6 +63,8 @@ public class MessageResourceExtension extends ResourceBundleMessageSource {
         this.setParentMessageSource(parent);
     }
 
+    
+    //后台设置前端页面显示国际化信息的文件，去掉前缀
     @Override
     protected String resolveCodeWithoutArguments(String code, Locale locale) {
         // 获取request中设置的指定国际化文件名

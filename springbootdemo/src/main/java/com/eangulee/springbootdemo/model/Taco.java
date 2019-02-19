@@ -12,7 +12,7 @@ import lombok.Data;
 public class Taco {
 
   // end::allButValidation[]
-  @NotNull
+  @NotNull//非null验证
   @Size(min=5, message="Name must be at least 5 characters long")
   // tag::allButValidation[]
   private String name;

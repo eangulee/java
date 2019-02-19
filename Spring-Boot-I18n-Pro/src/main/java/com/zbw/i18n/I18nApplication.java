@@ -26,7 +26,7 @@ public class I18nApplication {
         CookieLocaleResolver slr = new CookieLocaleResolver();
         slr.setDefaultLocale(Locale.CHINA);
         slr.setCookieMaxAge(3600);
-        slr.setCookieName("Language");
+        slr.setCookieName("Language");///设置存储的Cookie的name为Language
         return slr;
     }
 
