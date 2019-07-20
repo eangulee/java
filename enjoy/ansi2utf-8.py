@@ -10,7 +10,7 @@ def convert_encoding(filename, target_encoding):
  # convert file from the source encoding to target encoding
  content = codecs.open(filename, 'r').read()
  source_encoding = chardet.detect(content)['encoding']
- print source_encoding, filename
+ print(source_encoding, filename)
  content = content.decode(source_encoding) #.encode(source_encoding)
  codecs.open(filename, 'w', encoding=target_encoding).write(content)
 def main():
@@ -20,8 +20,8 @@ def main():
     filename = os.path.join(root, f)
     try:
      convert_encoding(filename, 'utf-8')
-    except Exception, e:
-     print filename
+    except:
+     print (filename)
 def process_bak_files(action='restore'):
  for root, dirs, files in os.walk(os.getcwd()):
   for f in files:
@@ -33,8 +33,8 @@ def process_bak_files(action='restore'):
       shutil.move(source, target)
      elif action == 'clear':
       os.remove(source)
-    except Exception, e:
-     print source
+    except :
+     print(source)
 if __name__ == '__main__':
  main()
  process_bak_files(action='clear')
